@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Media Queries</h1>
+    
+    <h2>O que são Media Queries?</h2>
+    <p>As media queries são uma técnica do CSS que permite aplicar estilos diferentes a um documento dependendo de características do dispositivo em que ele está sendo exibido. Elas são fundamentais para o design responsivo, que garante que sua aplicação ou site funcione bem em uma variedade de dispositivos e tamanhos de tela.</p>
+    
+    <h2>Como Funcionam as Media Queries</h2>
+    <p>As media queries utilizam a regra <code>@media</code> para definir condições sob as quais os estilos CSS devem ser aplicados. Essas condições podem se basear em características como a largura da tela, a altura, a orientação e o tipo de mídia (como impressão).</p>
+    
+    <h3>Sintaxe Básica</h3>
+    <div class="example">
+        <code>@media (condição) {<br> &nbsp;&nbsp;&nbsp;&nbsp;/* Estilos CSS */<br>}</code>
+    </div>
+    
+    <h2>Regras Comuns de Media Queries</h2>
+    
+    <h3>1. Impressão</h3>
+    <p>Para aplicar estilos específicos apenas durante a impressão, você pode usar:</p>
+    <div class="example">
+        <code>@media print {<br> &nbsp;&nbsp;&nbsp;&nbsp;/* Estilos para impressão */<br>}</code>
+    </div>
+    
+    <h3>2. Larguras de Dispositivos</h3>
+    <p>As media queries podem ser configuradas para diferentes tamanhos de tela. Aqui estão exemplos para smartphones, tablets e desktops:</p>
+    <a>
+        <img src="https://adminesite.com/wp-content/uploads/2020/10/responsive-website.png" alt="">
+    </a>
+    <ul>
+        <li><strong>Desktops (acima de 1024px)</strong></li>
+        <div class="example">
+            <code>@media (min-width: 1025px) {<br> &nbsp;&nbsp;&nbsp;&nbsp;/* Estilos para desktops */<br>}</code>
+        </div>
+    
+        <li><strong>Tablets (entre 601px e 1024px)</strong></li>
+        <div class="example">
+            <code>@media (min-width: 601px) and (max-width: 1024px) {<br> &nbsp;&nbsp;&nbsp;&nbsp;/* Estilos para tablets */<br>}</code>
+        </div>
+
+        <li><strong>Smartphones (até 600px)</strong></li>
+        <div class="example">
+            <code>@media (max-width: 600px) {<br> &nbsp;&nbsp;&nbsp;&nbsp;/* Estilos para smartphones */<br>}</code>
+        </div>
+    </ul>
+    
+    <h3>3. Disposição dos Dispositivos</h3>
+    <p>As media queries também permitem que você detecte a orientação do dispositivo, seja em modo retrato (portrait) ou paisagem (landscape).</p>
+    
+    <ul>
+        <li><strong>Retrato</strong></li>
+        <div class="example">
+            <code>@media (orientation: portrait) {<br> &nbsp;&nbsp;&nbsp;&nbsp;/* Estilos para dispositivos em modo retrato */<br>}</code>
+        </div>
+    
+        <li><strong>Paisagem</strong></li>
+        <div class="example">
+            <code>@media (orientation: landscape) {<br> &nbsp;&nbsp;&nbsp;&nbsp;/* Estilos para dispositivos em modo paisagem */<br>}</code>
+        </div>
+    </ul>
+    
+    <h2>Exemplos Completos</h2>
+    <p>Aqui está um exemplo completo de media queries que abrange impressão, tamanhos de dispositivos e orientações:</p>
+    <div class="example">
+        <code>
+            /* Estilos gerais */<br>
+            body {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;font-family: Arial, sans-serif;<br>
+            }<br><br>
+            
+            /* Impressão */<br>
+            @media print {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;body { font-size: 12pt; }<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;.no-print { display: none; }<br>
+            }<br><br>
+            
+            /* Smartphones */<br>
+            @media (max-width: 600px) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;body { background-color: lightblue; }<br>
+            }<br><br>
+            
+            /* Tablets */<br>
+            @media (min-width: 601px) and (max-width: 1024px) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;body { background-color: lightgreen; }<br>
+            }<br><br>
+            
+            /* Desktops */<br>
+            @media (min-width: 1025px) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;body { background-color: lightcoral; }<br>
+            }<br><br>
+            
+            /* Modo retrato */<br>
+            @media (orientation: portrait) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;.sidebar { display: none; }<br>
+            }<br><br>
+            
+            /* Modo paisagem */<br>
+            @media (orientation: landscape) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;.sidebar { display: block; }<br>
+            }
+        </code>
+    </div>
+
+    <h2>Conclusão</h2>
+    <p>As media queries são uma ferramenta poderosa para criar designs responsivos e acessíveis. Ao utilizar as regras mencionadas, você pode garantir que seu site seja funcional e visualmente atraente em uma ampla gama de dispositivos e condições de uso.</p>
+
+</body>
+</html>

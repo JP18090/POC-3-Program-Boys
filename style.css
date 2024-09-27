@@ -1,0 +1,112 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
+    background-color: #e6e1f2; 
+    color: #4a4458; 
+}
+
+/* Estilo do título principal */
+h1 {
+    font-size: 2em;
+    color: #3e3755; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos subtítulos */
+h2 {
+    font-size: 1.5em;
+    color: #3e3755; 
+    margin-top: 30px;
+    border-bottom: 2px solid #a18ad3; 
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #8475b1; 
+    margin-top: 20px;
+    border-left: 4px solid #a18ad3;
+    padding-left: 10px;
+}
+
+/* Estilos dos parágrafos */
+p {
+    margin-bottom: 15px;
+}
+
+/* Estilo da lista ordenada */
+ol {
+    margin-left: 20px;
+}
+
+ol ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+ol ul li {
+    margin: 5px 0;
+}
+
+/* Responsividade */
+/* Para desktop grandes (largura acima de 1200px) */
+@media (max-width: 1200px) {
+    body {
+        margin: 15px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+    h3 {
+        font-size: 1.1em;
+    }
+}
+
+/* Para tablets (largura até 768px) */
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+    h1 {
+        font-size: 1.6em;
+    }
+    h2 {
+        font-size: 1.3em;
+        margin-top: 25px;
+    }
+    h3 {
+        font-size: 1em;
+    }
+}
+
+/* Para celulares (largura até 480px) */
+@media (max-width: 480px) {
+    body {
+        margin: 5px;
+    }
+    h1 {
+        font-size: 1.4em;
+    }
+    h2 {
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+    h3 {
+        font-size: 0.9em;
+    }
+}
+
+a img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
