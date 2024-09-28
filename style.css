@@ -110,3 +110,37 @@ a img {
     display: block;
     margin: 0 auto;
 }
+
+/* Modo paisagem (landscape) */
+@media screen and (orientation: landscape) {
+    body {
+        margin: 20px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+    /* Ajuste da imagem no modo paisagem */
+    a img {
+        max-width: 90%;
+    }
+}
+
+/* Modo retrato (portrait) */
+@media screen and (orientation: portrait) {
+    body {
+        margin: 10px;
+    }
+    h1 {
+        font-size: 1.6em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    /* Ajuste da imagem no modo retrato */
+    a img {
+        max-width: 100%;
+    }
+}
